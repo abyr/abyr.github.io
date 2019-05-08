@@ -1,0 +1,100 @@
+/* Palette URL: http://paletton.com/#uid=12P0u0kllll8ktmf3oOslh1C4dk */
+.color-primary-0 { color: #2D882D }
+.color-primary-1 { color: #8BBB8B }
+.color-primary-2 { color: #549E54 }
+.color-primary-3 { color: #0C6D0C }
+.color-primary-4 { color: #005500 }
+
+:root {
+    --main-color: #2D882D;
+    --light-color-1: #8BBB8B;
+    --light-color-2: #549E54;
+    --dark-color-1: #0C6D0C;
+    --dark-color-2: #005500;
+
+    --background-color: #fff;
+    --text-color: #29323C;
+    --header-color: var(--dark-color-2);
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: 0.5em;
+    position: relative;
+    margin: auto;
+    max-width: 50em;
+    font-family: Courier, monospace;;
+    font-size: large;
+}
+
+h1, h2, h3, h4 {
+  color: var(--header-color);
+  margin: 0;
+}
+
+a {
+    color: var(--header-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:active, a:hover {
+    outline: 0
+}
+
+blockquote {
+    padding: 0 0 0 15px;
+    margin: 0 0 18px;
+    border-left: 5px solid var(--light-color-1);
+    line-height: 1.5em;
+}
+blockquote p {
+    font-style: italic;
+}
+
+pre {
+    background: #f4fff7;
+    border: 1px solid #ddd;
+    border-left: 3px solid var(--light-color-1);
+    color: var(--dark-color-2);
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+
+article {
+    margin: 12px auto;
+    border-bottom: 1px dotted var(--light-color-1);
+    padding: 24px 0 48px;
+}
+article > h1 {
+    text-align: center;
+}
+
+#preamble {
+    margin-bottom: 20px;
+}
+#postamble {
+    margin-top: 20px;
+}
+
