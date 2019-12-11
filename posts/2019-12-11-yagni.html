@@ -1,0 +1,207 @@
+<html>
+<head>
+		<link rel="Stylesheet" type="text/css" href="../style.css" />
+		<title>You aren't gonna need it!</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type=\"text/javascript\" src=\"//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5bdc32b9dc15cb1f\"></script>
+     <script type=\"text/javascript\">
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-105032758-1', 'auto');
+       ga('send', 'pageview');
+    </script>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="/">Index</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1>You aren't gonna need it!</h1>
+		<div class="content">
+<div id="Contents" class="toc"><h1 id="Contents">Contents</a></h1></div>
+<ul>
+<li>
+<a href="2019-12-11-yagni.html#Why YAGNI?">Why YAGNI?</a>
+
+<li>
+<a href="2019-12-11-yagni.html#Negative effects">Negative effects</a>
+
+<li>
+<a href="2019-12-11-yagni.html#Practice">Practice</a>
+
+<li>
+<a href="2019-12-11-yagni.html#Requirements to a code">Requirements to a code</a>
+
+<li>
+<a href="2019-12-11-yagni.html#Links">Links</a>
+
+</ul>
+
+
+<div id="Why YAGNI?"><h1 id="Why YAGNI?" class="header"><a href="#Why YAGNI?">Why YAGNI?</a></h1></div>
+
+<p>
+YAGNI (You aren't gonna need it)!
+</p>
+
+<p>
+YAGNI principle means do just what you need at the moment. Don't put any efforts on useless things.
+</p>
+
+<p>
+The effects of following YAGNI principle are better code and faster implementation.
+</p>
+
+<p>
+Following the principle lets you get rid of extra functionality and extra complexity. It's about how to keep things simple.
+</p>
+
+<p>
+YAGNI means don't waste your time at the moment and don't steal your time in the future. If you need something in a week or later than you just do it in a week or later.
+</p>
+
+<p>
+You have a minimum of a code. Upfront thinking with guesses can pollute the code with unreasonable abstractions and useless complexity.
+</p>
+
+
+<div id="Negative effects"><h1 id="Negative effects" class="header"><a href="#Negative effects">Negative effects</a></h1></div>
+
+<p>
+YAGNI has an important side effect you should remember. Simple implentation requires a detailed description of a functionality and a required result. Short iterations help you to decrease a value of this effect.
+</p>
+
+<div id="Practice"><h1 id="Practice" class="header"><a href="#Practice">Practice</a></h1></div>
+
+<p>
+What to do next once implementation is done?
+</p>
+
+<p>
+```
+</p>
+<ul>
+<li>
+It is done.
+
+<li>
+Is it slow?
+
+<li>
+No, it's fast enough.
+
+<li>
+Than just keep it as is.
+
+</ul>
+
+<ul>
+<li>
+OK, it is slow.
+
+<li>
+Try to make it faster.
+
+</ul>
+
+<ul>
+<li>
+Actually, not really too slow.
+
+<li>
+Then just keep it.
+
+</ul>
+
+<ul>
+<li>
+But It can work better.
+
+<li>
+Is it needed now?
+
+<li>
+No.
+
+<li>
+Keep it.
+
+</ul>
+
+<ul>
+<li>
+Hm.. Yes, it is needed now.
+
+<li>
+OK. Improve it.
+
+</ul>
+
+<ul>
+<li>
+I'm not sure if we needed it.
+
+<li>
+Keep it and ask people who is responsible for planning.
+
+</ul>
+
+<p>
+```
+</p>
+
+<div id="Requirements to a code"><h1 id="Requirements to a code" class="header"><a href="#Requirements to a code">Requirements to a code</a></h1></div>
+
+<p>
+The best things to optimize are smells in a code.
+</p>
+
+<p>
+Duplicated code. Lots of duplications are dangerous and time wasting.
+Don't collect them. Extract a method or a class to save your time in the future.
+</p>
+
+<p>
+Conditional complexity and nested conditions are hard to read. Usually we are spending 90% of our time reading the code. Don't keep it hard to read. Make a named operation and don't make you to remember your decision. Extract a method to save your time on replacing one conditional with another one faster.
+</p>
+
+<p>
+Don't use comments a lot. They starts to lie during the time. Remove a comment and make it  a part of an active code, make it readable and replaceable code. People don't always read comments as a part of a passive code. Just remove them and don't let them to lie in the future.
+</p>
+
+<p>
+Temporary fields. Watch out of low cohesion and extra or optional fields. Remove them if it is possible and a code stays readable without them.
+</p>
+
+<p>
+Combinatorial Explosion. It's a kind of a duplication. Keep it simple. Use the previous or the best method in all places if it is possible.
+</p>
+
+<p>
+Feature Envy. It's a real time bomb. You become dependent of the envy usage. Don't let high cohesion to make things complicated. There should be only a single responsibility to edit the module. Prefer aggregation to inheritance. Move envy method or extract it.
+</p>
+
+<p>
+Remember things change. Something looks important today but tomorrow it becames useless. Making all implementation as a proof of concept can help you to start replace and refactor instead of rewrite everything.
+</p>
+
+<div id="Links"><h1 id="Links" class="header"><a href="#Links">Links</a></h1></div>
+<ul>
+<li>
+<a href="http://wiki.c2.com/?YouArentGonnaNeedIt">http://wiki.c2.com/?YouArentGonnaNeedIt</a>
+
+</ul>
+</div>
+
+    <footer><p><small>Page created on 2019-12-11</small></p></footer>
+</body>
+</html>
